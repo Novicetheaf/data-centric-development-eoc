@@ -9,19 +9,14 @@ def index():
     return render_template("index.html")
 
 
-@app.route('/about')
-def about():
-    return render_template("about.html")
+@app.route('/add_reviews')
+def add_reviews():
+    return render_template("add-reviews.html")
 
 
-@app.route('/contact')
-def contact():
-    return render_template("contact.html")
-
-
-@app.route('/careers')
-def careers():
-    return render_template("careers.html")
+@app.route('/reviews')
+def reviews():
+    return render_template("reviews.html")
 
 
 if __name__ == '__main__':
